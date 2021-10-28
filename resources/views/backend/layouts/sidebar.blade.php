@@ -44,7 +44,7 @@
             </a>
         </li>
         <li>
-            <a href="side-menu-file-manager.html" class="side-menu">
+            <a href="{{URL::to('/file')}}" class="side-menu">
                 <div class="side-menu__icon"> <i data-feather="hard-drive"></i> </div>
                 <div class="side-menu__title"> File Manager </div>
             </a>

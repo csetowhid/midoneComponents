@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BackendController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('backend.index');
 });
+
+Route::get('/file', [BackendController::class,'file']);
