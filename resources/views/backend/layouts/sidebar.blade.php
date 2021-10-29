@@ -6,7 +6,7 @@
     <div class="side-nav__devider my-6"></div>
     <ul>
         <li>
-            <a href="index.html" class="side-menu side-menu--active">
+            <a href="index.html" class="side-menu <?php if (\Request::is('dashboard')) {  echo ' side-menu--active'; } ?>">
                 <div class="side-menu__icon"> <i data-feather="home"></i> </div>
                 <div class="side-menu__title"> Dashboard </div>
             </a>
@@ -44,7 +44,7 @@
             </a>
         </li>
         <li>
-            <a href="{{URL::to('/file')}}" class="side-menu">
+            <a href="{{route('file')}}" class="side-menu <?php if (\Request::is('file')) {  echo ' side-menu--active'; } ?>">
                 <div class="side-menu__icon"> <i data-feather="hard-drive"></i> </div>
                 <div class="side-menu__title"> File Manager </div>
             </a>

@@ -22,4 +22,4 @@ Route::get('/', function () {
     return view('backend.index');
 });
 
-Route::get('/file', [BackendController::class,'file']);
+Route::get('/file', [BackendController::class,'file'])->name('file');
